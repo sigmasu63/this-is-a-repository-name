@@ -8,6 +8,15 @@ int main(void){
     if alive == false {
         printf("rest in peace");
         wait(1000);
-        return 0;
+        return 1;
     }
+    if braincells == 0 {
+        printf("yeah u dead");
+        wait(1000);
+        return 1;
+    }
+    if braincells < 10 {
+        printf("you are very dump but alive");
+    }
+
 }

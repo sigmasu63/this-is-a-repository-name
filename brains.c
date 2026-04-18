@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdbool.h>
 int main(void){
-    printf("hi");// over time i will change this alot every day or a few times a day who knows :shrug: 
+    printf("hi");// over time i will change this 
     int braincells = 5;
     bool alive = true;
     if alive == false {

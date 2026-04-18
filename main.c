@@ -18,5 +18,8 @@ int main(void){
     if braincells < 10 {
         printf("you are very dump but alive");
     }
-
+    if braincells > 20 {
+        printf("middle land smarts");
+    if braincells > 30 {
+        printf("kind of smart");
 }

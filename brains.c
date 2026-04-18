@@ -1,7 +1,11 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
-#include <windows.h> // for sleep on windows #include <unistd.h> for linux
+
+#ifdef _WIN32
+#include <windows.h>
+#define SLEEP(ms) Sleep(ms)
+#endif
 
 int main(void) {
     printf("hi");
@@ -11,16 +15,14 @@ int main(void) {
 
     if (alive == false) {
         printf("rest in peace");
-        Sleep(1000);
+        SLEEP(1000);
         return 1;
     }
-
     if (braincells == 0) {
         printf("yeah u dead");
-        Sleep(1000);
+        SLEEP(1000);
         return 1;
     }
-
     if (braincells < 10) {
         printf("you are very dumb but alive");
     }
@@ -30,6 +32,5 @@ int main(void) {
     else if (braincells > 20) {
         printf("middle land smarts");
     }
-
     return 0;
 }

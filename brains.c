@@ -20,12 +20,12 @@ int main(void) {
         SLEEP(1000);
         return 1;
     }
-    if (braincells == 0) {
+   else if (braincells == 0) {
         printf("yeah u dead");
         SLEEP(1000);
         return 1;
     }
-    if (braincells < 10) {
+    else if (braincells < 10) {
         printf("you are very dumb but alive");
     }
     else if (braincells > 30) {

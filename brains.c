@@ -15,7 +15,7 @@ int main(void) {
 
     if (alive == false) {
         printf("rest in peace");
-        SLEEP(1000);
+        Sleep(1000);
         return 0;
     }
 
